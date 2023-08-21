@@ -1,0 +1,58 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app > 
+	<servlet>
+		<servlet-name>Loader</servlet-name>
+		<servlet-class>api.Loader</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>index</servlet-name>
+		<jsp-file>/index.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>landing</servlet-name>
+		<jsp-file>/landing.jsp</jsp-file>
+	</servlet>
+      <servlet>
+		<servlet-name>wait</servlet-name>
+		<jsp-file>/wait.jsp</jsp-file>
+	</servlet>
+		<servlet>
+		<servlet-name>terms</servlet-name>
+		<jsp-file>/terms.html</jsp-file>
+	</servlet>
+		<servlet>
+			<servlet-name>checkWaiting</servlet-name>
+			<display-name>checkWaiting</display-name>
+			<description></description>
+			<servlet-class>api.checkWaiting</servlet-class>
+		</servlet>
+
+	<servlet-mapping>
+		<servlet-name>wait</servlet-name>
+		<url-pattern>/wait</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>landing</servlet-name>
+		<url-pattern>/entry</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>terms</servlet-name>
+		<url-pattern>/terms</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>checkWaiting</servlet-name>
+		<url-pattern>/checkWaiting</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>index</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+	
+
+</web-app>

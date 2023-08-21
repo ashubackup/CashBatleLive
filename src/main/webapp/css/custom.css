@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap');
+* {
+    padding:0px;
+    margin:0px;
+    font-family: 'Poppins', sans-serif;
+}
+
+button.btnn {
+    border-radius: 50px;
+    padding: 7px 24px;
+}
+
+.form-group label {
+    color: #000 !important;
+}
+
+.bg-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+label.form-check-label {
+    font-weight: 300;
+}
+.footer-para p {
+    color: #6c757d;
+}
+.inner-part h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+.inner-part .col-md-6 {
+    padding: 23px 15px;
+}
+button.btnn {
+    background: #ffcb05;
+    font-weight: 600;
+}
+.footer img {
+    width: 70px;
+}
+.footer-para {
+    padding: 0px;
+    display: flex;
+    align-items: center;
+}
+.footer a {
+    color: #888a85;
+}
+.footer a:hover {
+    color: #fecd8a;
+}
+
+@media only screen and (max-width: 600px) {
+    .inner-part h4 {
+        font-size: 17px;
+    }
+    .footer-para p {
+        font-size: 13px;
+    }
+  }
+  
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.inner-part {
+    flex: 1;
+}
+
+
+::-webkit-scrollbar
+{
+	width: 0px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+	border: 0px solid #555555;
+}
